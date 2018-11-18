@@ -20,18 +20,18 @@ author: Justin VanWinkle
 ## Own Your SLAs
 
 # Where to Deploy
-    Depends on your needs.
-    * Self-Hosted
-    * Cloud
+Depends on your needs.
+* Self-Hosted
+* Cloud
 
 ## Azure Offerings
-    1. AKS
-    1. ACI
-    1. App Service for Containers
+1. AKS
+1. ACI
+1. App Service for Containers
 
 # Technologies for Microservices
-    These aren't required for microservices.
-    They do assist with implementations details.
+These aren't required for microservices.
+They do assist with implementations details.
 
 ## Docker
 
@@ -40,12 +40,12 @@ author: Justin VanWinkle
 # Transitioning to Microservices by Iterating
 
 ## Start Small
-    Monumetal undertaking.
-    Eat an Elephant 1 bite at a time.
+Monumetal undertaking.
+Eat an Elephant 1 bite at a time.
 
 ## 
 
 # The End
 
-@FundamentalDev
-https://www.jvanwinkle.com/
+[\@FundamentalDev](https://twitter.com/FundamentalDev)
+[https://www.jvanwinkle.com ](https://www.jvanwinkle.com/)
