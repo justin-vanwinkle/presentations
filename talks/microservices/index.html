@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Justin VanWinkle">
+  <title>iMicroservices</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title">iMicroservices</h1>
+  <p class="subtitle">Details of a Proper Implementation</p>
+  <p class="author">Justin VanWinkle</p>
+</section>
+
+<section id="what-are-microservices" class="slide level1">
+<h1>What are Microservices?</h1>
+<h2 id="nanoservices">Nanoservices</h2>
+<h2 id="monoliths">Monoliths</h2>
+<h2 id="microservices">Microservices</h2>
+</section>
+<section id="microservice-boundaries" class="slide level1">
+<h1>Microservice Boundaries</h1>
+<h2 id="business-unit">Business Unit</h2>
+<h2 id="own-your-slas">Own Your SLAs</h2>
+</section>
+<section id="where-to-deploy" class="slide level1">
+<h1>Where to Deploy</h1>
+<pre><code>Depends on your needs.
+* Self-Hosted
+* Cloud</code></pre>
+<h2 id="azure-offerings">Azure Offerings</h2>
+<pre><code>1. AKS
+1. ACI
+1. App Service for Containers</code></pre>
+</section>
+<section id="technologies-for-microservices" class="slide level1">
+<h1>Technologies for Microservices</h1>
+<pre><code>These aren&#39;t required for microservices.
+They do assist with implementations details.</code></pre>
+<h2 id="docker">Docker</h2>
+<h2 id="kubernetes">Kubernetes</h2>
+</section>
+<section id="transitioning-to-microservices-by-iterating" class="slide level1">
+<h1>Transitioning to Microservices by Iterating</h1>
+<h2 id="start-small">Start Small</h2>
+<pre><code>Monumetal undertaking.
+Eat an Elephant 1 bite at a time.</code></pre>
+<h2 id="section"></h2>
+</section>
+<section id="the-end" class="slide level1">
+<h1>The End</h1>
+<p><span class="citation" data-cites="FundamentalDev">@FundamentalDev</span> https://www.jvanwinkle.com/</p>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
