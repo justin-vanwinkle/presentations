@@ -1,5 +1,5 @@
 ---
-title: iMicroservices
+title: Microservices
 subtitle: Details of a Proper Implementation
 author: Justin VanWinkle
 
