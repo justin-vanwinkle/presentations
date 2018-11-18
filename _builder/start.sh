@@ -11,21 +11,22 @@ useradd --shell /bin/bash -u "$USER_UID" -g "$USER_GID" -m user
 
 chown -R user:user /reveal.js
 
-sudo -u user rsync -a /reveal.js /app/talk
+#mkdir /app/talk/output
+sudo -u user rsync -a /reveal.js /app/talk/output
 
 # https://stackoverflow.com/a/20381373/586148
 DIRECTORY_TO_OBSERVE="/app/talk"
 function block_for_change {
-  inotifywait --exclude reveal.js --exclude index.html -r -e modify,move,create,delete $DIRECTORY_TO_OBSERVE
+  inotifywait --exclude output -r -e modify,move,create,delete $DIRECTORY_TO_OBSERVE
 }
 
 function build {
-  sudo -u user pandoc -V history=true -t revealjs -s /app/talk/slides.md -o /app/talk/index.html
+  sudo -u user pandoc -V history=true -t revealjs -s /app/talk/slides.md -o /app/talk/output/index.html
 }
 
 build
 
-pushd /app/talk/; python -m SimpleHTTPServer 80
+pushd /app/talk/output; python -m SimpleHTTPServer 80
 
 while block_for_change; do
   build

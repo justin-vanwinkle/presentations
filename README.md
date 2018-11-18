@@ -1,12 +1,12 @@
-# Presentation Builder
+# Presentations
 
-A simplistic way to create stunning presentations with speed using [Reveal.js](https://github.com/hakimel/reveal.js) and Docker.
+This is a collection of my talks and presentations. In each subfolder below the `talks/` directory, there is an `output/index.html` that can be viewed with a browser to see the presentation.  The presentations are standalone and do not require an internet connection.
 
-## Capabilities
+## Presentation Builder
 
-1. Convert markdown to reveal.js presentation slides.
-2. Watch input for changes and automatically rebuild presentation (manual page refresh required).
-3. Serve your presentation from a distributable container.
+To build presentations, I work from a modified version of my presentation builder project that can be found here: [https://github.com/justin-vanwinkle/presentation-builder](https://github.com/justin-vanwinkle/presentation-builder)
+
+This is a stunningly simple and fast way to create beautiful presentations using [Reveal.js](https://github.com/hakimel/reveal.js) and Docker.
 
 ## Prerequisites
 
@@ -14,25 +14,20 @@ Docker is the only requirement.
 
 ## Usage
 
-In any case, this repo can be cloned and used as a skeleton for creating your presentation.
+Executing `present.sh/ talks/mytalk -b` would build the talk `mytalk` and open a browser on `mytalk`.
 
-### Working on your presentation
+### Create a new presentation
 
-* Run `prepare.sh`
-* Modify `input/slides.md`
-* Place resources in `input/res/`
+1. Run `cp -r skeletonTalk talks/<subpath>/<talkname>`
+1. Modify `input/slides.md`
+1. Place resources (images, videos, etc...) in `input/res` (subfolders are fine)
+1. Run `./present.sh talks/<subpath>/<talkname>`
 
 **Notes:**
 
-* `input/slides.md` represents your slides.
-* Any resources that you reference in `input/slides.md` should be placed in `input/res/`.
-* `prepare.sh` rebuilds the presentation upon changes to the input folder.  The browser requires manual refresh however.
-
-### Presenting Locally
-
-Run `present.sh`.
-
-The only difference between this and `prepare.sh` is that `present.sh` does not monitor for changes.  It will still serve the content from the container, however.
+* `input/slides.md` represents all slides for a talk.
+* Any resources referenced in `input/slides.md` should be placed in `input/res/`.
+* Changes to `slides.md` and the `res` directory trigger automatic rebuilds.  The browser requires manual refresh however.
 
 ### Distributing
 
