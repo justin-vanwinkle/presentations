@@ -1,5 +1,11 @@
 # Presentations
 
+I use reveal-ck to build my presentations.
+https://github.com/jedcn/reveal-ck
+http://jedcn.github.io/reveal-ck/
+
+**The info below is old**
+
 This is a collection of my talks and presentations. In each subfolder below the `talks/` directory, there is an `output/index.html` that can be viewed with a browser to see the presentation.  The presentations are standalone and do not require an internet connection.
 
 ## Presentation Builder
