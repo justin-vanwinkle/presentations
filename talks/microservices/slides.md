@@ -1,5 +1,4 @@
-# Microservices
-## Implementation Details
+# Effective Microservices
 [Justin VanWinkle](https://www.jvanwinkle.com)
 [@FundamentalDev](https://twitter.com/FundamentalDev)
 

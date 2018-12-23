@@ -1,0 +1,465 @@
+<section>
+
+<h1>Effective Microservices</h1>
+<p><a href="https://www.jvanwinkle.com">Justin VanWinkle</a><br>
+<a href="https://twitter.com/FundamentalDev">@FundamentalDev</a></p>
+
+<aside class="notes">
+
+<p>This talk is intended to demonstrate that you can’t just start implementing microservices without preparation and understanding of what makes them effective.</p>
+
+</aside>
+
+</section>
+<section>
+<section>
+
+<h2>Defining “Effective”</h2>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>Minimal Outages</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>Fast Response Times</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>Cost Effective</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>Easy Deployments</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>Ability to Deploy Regularly</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Defining “Microservice”</h2>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>Monolith</h3>
+
+<aside class="notes">
+
+<p>Like a large object that has been carved into shape.<br>
+Intersection/conflict between business requirements.  Competing interest in overlapping areas. Marketing changes break finance features or change business rules.</p>
+
+</aside>
+
+</section>
+<section>
+
+<h3>Nanoservice</h3>
+
+<aside class="notes">
+
+<p>Like free-form legos.<br>
+Each lego is generic in design.  This means you are building services for tasks. (Retrieve song information - can be shared by other services that call it)<br>
+Services depend on services depend on services.  Debugging by tracing is terrible.  SLAs are terrible.  Cost is terrible.</p>
+
+</aside>
+
+</section>
+<section>
+
+<h3>Microservice</h3>
+
+<aside class="notes">
+
+<p>Yes, it is SOA.  But it is a specific subset of SOA.<br>
+Like a lego kit.  Each lego is shaped to serve a specific purpose in the bigger picture.<br>
+Each “specific purpose” is a business requirement. (Play music and search for music – these can use the same modules, but should individually and independently be responsible for retrieving title and description; no call to a shared service.)<br>
+The “bigger picture” is the business as a whole.</p>
+
+</aside>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Gotchas</h2>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>Service Boundaries</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>Automation</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>Logging</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>Monitoring</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>Team Structure</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>Org Structure</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>DevOps Culture</h3>
+
+<aside class="notes">
+
+<p>Note “culture”.<br>
+Not a DevOps guy.<br>
+Not a DevOps department.<br>
+A culture shift with shared buy-in.</p>
+
+</aside>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Tools</h2>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>DevOps</h3>
+
+<aside class="notes">
+
+<p>Complete CI/CD</p>
+<ul>
+  <li>Azure DevOps</li>
+  <li>GitHub Pipelines</li>
+  <li>Jenkins</li>
+</ul>
+
+</aside>
+
+</section>
+<section>
+
+<h3>Configuration as Code</h3>
+
+<aside class="notes">
+
+<p>Version control<br>
+Change tracking<br>
+Audit logging</p>
+
+</aside>
+
+</section>
+<section>
+
+<h3>Infrastructure as Code</h3>
+
+<aside class="notes">
+
+<p>Version control<br>
+Change tracking<br>
+Audit logging</p>
+
+</aside>
+
+</section>
+<section>
+
+<h3>The Cloud</h3>
+
+<aside class="notes">
+
+<p>Lots to take advantage of:</p>
+<ul>
+  <li>Autoscaling</li>
+  <li>Monitoring</li>
+  <li>Simplicity of setup and configuration</li>
+</ul>
+
+</aside>
+
+</section>
+<section>
+
+<h3>Docker</h3>
+
+<aside class="notes">
+
+<p>All-in-one packaging<br>
+Reproducability</p>
+
+</aside>
+
+</section>
+<section>
+
+<h3>Kubernetes</h3>
+
+<aside class="notes">
+
+<p>Scaling<br>
+Redundancy<br>
+Orchestration</p>
+
+</aside>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Creation Process</h2>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>0. Plan Boundaries</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>1. Write Minimum Viable Service</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>2. Implement DevOps</h3>
+
+<aside class="notes">
+
+<p>Codify Infrastructure<br>
+Codify Configuration<br>
+Build CI/CD Pipeline</p>
+
+</aside>
+
+</section>
+<section>
+
+<h3>3. Containerize</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>4. Orchestrate</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Key Takeaways</h2>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>Automate Everything</h3>
+
+<aside class="notes">
+
+<p>Build<br>
+Test<br>
+Release/Deploy<br>
+Infrastructure<br>
+Configuration</p>
+
+</aside>
+
+</section>
+<section>
+
+<h3>Codify Everything</h3>
+
+<aside class="notes">
+
+<p>Service<br>
+Infrastructure<br>
+Configuration<br>
+Build<br>
+Deploy</p>
+
+</aside>
+
+</section>
+<section>
+
+<h3>Test Everything</h3>
+
+<aside class="notes">
+
+<p>Load Test early and often<br>
+Acceptance test<br>
+Unit Test<br>
+Integration Test<br>
+Shift testing left in schedule</p>
+
+</aside>
+
+</section>
+<section>
+
+<h3>Monitor Everything</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+</section>
+
+<section>
+<section>
+
+<h2>Next Steps</h2>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>Literature</h3>
+
+<aside class="notes">
+
+<p>DDD<br>
+DDD Quickly<br>
+MSFT Docs</p>
+
+</aside>
+
+</section>
+<section>
+
+<h3>Reach Out</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+<section>
+
+<h3>Follow Me</h3>
+
+<aside class="notes">
+
+</aside>
+
+</section>
+</section>
