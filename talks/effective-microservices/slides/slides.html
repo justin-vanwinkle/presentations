@@ -23,9 +23,27 @@
 </section>
 <section>
 
-<h3>Minimal Outages</h3>
+<h3>Solve Business Problem</h3>
 
 <aside class="notes">
+
+<p>It must own business problem front to back.</p>
+
+<p>If it doesn’t, it’s a utility, incomplete service, or improperly formed microservice.</p>
+
+<p>Not likely good for use in a production system.</p>
+
+</aside>
+
+</section>
+<section>
+
+<h3>Minimal Outages</h3>
+<p><img src="images/outage.jpg" alt="Outage"></p>
+
+<aside class="notes">
+
+<p>Because outages aren’t considered effective.</p>
 
 </aside>
 
@@ -36,6 +54,10 @@
 
 <aside class="notes">
 
+<p>It doesn’t serve the end user well if they have to wait 30+ seconds for a response.</p>
+
+<p>This is easier to get wrong than you might think.</p>
+
 </aside>
 
 </section>
@@ -45,14 +67,23 @@
 
 <aside class="notes">
 
+<p>Microservices shouldn’t make finance cringe when they write the checks.</p>
+
+<p>If your microservices are formed properly, your cost should be naturally effective.</p>
+
 </aside>
 
 </section>
 <section>
 
 <h3>Easy Deployments</h3>
+<p><img src="images/devops-loop.png" alt="DevOps Loop"></p>
 
 <aside class="notes">
+
+<p>A fully automated DevOps pipeline is necessary.</p>
+
+<p>Otherwise, efficiency is lost in manual tasks.</p>
 
 </aside>
 
@@ -62,6 +93,10 @@
 <h3>Ability to Deploy Regularly</h3>
 
 <aside class="notes">
+
+<p>If you can’t deploy regularly, you have a constraint.</p>
+
+<p>DevOps is the answer here once again.</p>
 
 </aside>
 
@@ -75,17 +110,25 @@
 
 <aside class="notes">
 
+<p>Let’s make sure we understand what a microservice is – and isn’t.</p>
+
 </aside>
 
 </section>
 <section>
 
 <h3>Monolith</h3>
+<p><img src="images/monolith-house.jpg" alt="Monolith House"></p>
 
 <aside class="notes">
 
-<p>Like a large object that has been carved into shape.<br>
-Intersection/conflict between business requirements.  Competing interest in overlapping areas. Marketing changes break finance features or change business rules.</p>
+<p>Like a large object that has been carved into shape.</p>
+
+<p>Intersection/conflict between business requirements.</p>
+
+<p>Competing interest in overlapping areas.</p>
+
+<p>Marketing changes break finance features or change business rules.</p>
 
 </aside>
 
@@ -93,12 +136,22 @@ Intersection/conflict between business requirements.  Competing interest in over
 <section>
 
 <h3>Nanoservice</h3>
+<p><img src="images/nanoservice-house.jpg" alt="Nanoservice House"></p>
 
 <aside class="notes">
 
-<p>Like free-form legos.<br>
-Each lego is generic in design.  This means you are building services for tasks. (Retrieve song information - can be shared by other services that call it)<br>
-Services depend on services depend on services.  Debugging by tracing is terrible.  SLAs are terrible.  Cost is terrible.</p>
+<p>Like free-form legos.</p>
+
+<p>Each lego is generic in design.</p>
+
+<p>This means you are building services for tasks. (Retrieve song information - can be shared by other services that call it)</p>
+
+<p>Services depend on services depend on services.</p>
+<ul>
+  <li>Debugging by tracing is terrible.</li>
+  <li>SLAs are terrible.</li>
+  <li>Cost is terrible.</li>
+</ul>
 
 </aside>
 
@@ -106,13 +159,19 @@ Services depend on services depend on services.  Debugging by tracing is terribl
 <section>
 
 <h3>Microservice</h3>
+<p><img src="images/microservice-house.jpg" alt="Microservice House"></p>
 
 <aside class="notes">
 
-<p>Yes, it is SOA.  But it is a specific subset of SOA.<br>
-Like a lego kit.  Each lego is shaped to serve a specific purpose in the bigger picture.<br>
-Each “specific purpose” is a business requirement. (Play music and search for music – these can use the same modules, but should individually and independently be responsible for retrieving title and description; no call to a shared service.)<br>
-The “bigger picture” is the business as a whole.</p>
+<p>Specific subset of SOA in which services own their entire vertical.</p>
+
+<p>Like a lego kit.</p>
+
+<p>Each lego is shaped to serve a specific purpose in the bigger picture.</p>
+
+<p>Each “specific purpose” is a business requirement. (Play music and search for music – these can use the same modules, but should individually and independently be responsible for retrieving title and description; no call to a shared service.)</p>
+
+<p>The “bigger picture” is the business as a whole or an end-facing application.</p>
 
 </aside>
 
