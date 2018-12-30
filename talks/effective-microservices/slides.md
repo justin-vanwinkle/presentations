@@ -162,11 +162,11 @@ Dev, ops, test, product management.
 Lacking DevOps Culture
 [More Info](https://docs.microsoft.com/en-us/azure/devops/learn/what-is-devops-culture)
 ```notes
-You build it -- you run it.
 Note "culture".
 Not a DevOps guy.
 Not a DevOps department.
 A culture shift with shared buy-in.
+You build it -- you run it.
 ```
 
 ***
@@ -221,40 +221,52 @@ Orchestration
 ```
 ***
 ***
-## Creation Process
+Creation Process
 ```notes
 
 ```
 ---
-### 0. Plan Boundaries
+1 - Identify and Plan Boundaries
+[More Info](https://docs.microsoft.com/en-us/azure/architecture/microservices/domain-analysis)
+[Even more info](https://docs.microsoft.com/en-us/azure/architecture/microservices/microservice-boundaries)
 ```notes
-
+This is critical.
+Lots of literature.
 ```
 ---
-### 1. Write Minimum Viable Service
+2 - Write Minimum Viable Service
 ```notes
-
+Gotta start somewhere.
+Aside from poor boundaries, it's mostly easy to refactor for lessons learned.
 ```
 ---
-### 2. Implement DevOps
+3 - Implement CI/CD
+![DevOps](images/devops.jpg)
 ```notes
 Codify Infrastructure
 Codify Configuration
 Build CI/CD Pipeline
 ```
 ---
-### 3. Containerize
+4 - Containerize (Optional)
+![Docker](images/docker.png)
 ```notes
-
+There are benefits to be realized.
+But only case-by-case.
+Learning curve.
 ```
 ---
-### 4. Orchestrate
+5 - Orchestrate (Optional)
+![Kubernetes](images/kubernetes.png)
 ```notes
-
+Massive benefits.
+Learning curve.
 ```
+
 ***
 ***
-## Key Takeaways
+
+Key Takeaways
 ```notes
 
 ```
