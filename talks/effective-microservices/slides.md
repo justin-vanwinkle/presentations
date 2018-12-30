@@ -1,4 +1,6 @@
-# Effective Microservices
+<p style="font-size:80px;">
+Effective<br/>Microservices
+</p>
 [Justin VanWinkle](https://www.jvanwinkle.com)
 [@FundamentalDev](https://twitter.com/FundamentalDev)
 ```notes
@@ -7,12 +9,15 @@ This talk is intended to demonstrate that you can't just start implementing micr
 
 ***
 
-## Defining "Effective"
+Defining "Effective"
+<video src="https://media.giphy.com/media/1qG8Tr4G3htja/giphy.mp4"></video>
 ```notes
 
 ```
 ---
-### Solve Business Problem
+Solve Business Problem
+<video src="https://media.giphy.com/media/UKkes2qN2T70s/giphy.mp4"></video>
+[More Info](https://docs.microsoft.com/en-us/azure/architecture/microservices/domain-analysis)
 ```notes
 It must own business problem front to back.
 
@@ -21,50 +26,47 @@ If it doesn't, it's a utility, incomplete service, or improperly formed microser
 Not likely good for use in a production system.
 ```
 ---
-### Minimal Outages
-![Outage](images/outage.jpg)
+Minimize Outages
+<video loop src="https://media.giphy.com/media/u89uPwAyJSyYg/giphy.mp4"></video>
 ```notes
 Because outages aren't considered effective.
 ```
 ---
-### Fast Response Times
+Fast Response Times
+<video src="https://media.giphy.com/media/l4FGwBxQ8VjtzNcv6/giphy.mp4"></video>
 ```notes
 It doesn't serve the end user well if they have to wait 30+ seconds for a response.
 
 This is easier to get wrong than you might think.
 ```
 ---
-### Cost Effective
+Cost Effective
+<video src="https://media.giphy.com/media/3ohjV1wV5q38uFVjG0/giphy.mp4"></video>
 ```notes
 Microservices shouldn't make finance cringe when they write the checks.
 
 If your microservices are formed properly, your cost should be naturally effective.
 ```
 ---
-### Easy Deployments
+Deploy Easily and Regularly
 ![DevOps Loop](images/devops-loop.png)
 ```notes
 A fully automated DevOps pipeline is necessary.
 
-Otherwise, efficiency is lost in manual tasks.
-```
----
-### Ability to Deploy Regularly
-```notes
 If you can't deploy regularly, you have a constraint.
 
-DevOps is the answer here once again.
+Otherwise, efficiency is lost in manual tasks.
 ```
 
 ***
 ***
 
-## Defining "Microservice"
+Defining "Microservice"
 ```notes
 Let's make sure we understand what a microservice is -- and isn't.
 ```
 ---
-### Monolith
+Monolith
 ![Monolith House](images/monolith-house.jpg)
 ```notes
 Like a large object that has been carved into shape.
@@ -76,7 +78,7 @@ Competing interest in overlapping areas.
 Marketing changes break finance features or change business rules.
 ```
 ---
-### Nanoservice
+Nanoservice
 ![Nanoservice House](images/nanoservice-house.jpg)
 ```notes
 Like free-form legos.
@@ -91,7 +93,7 @@ Services depend on services depend on services.
 * Cost is terrible. 
 ```
 ---
-### Microservice
+Microservice
 ![Microservice House](images/microservice-house.jpg)
 ```notes
 Specific subset of SOA in which services own their entire vertical.
@@ -108,50 +110,68 @@ The "bigger picture" is the business as a whole or an end-facing application.
 ***
 ***
 
-## Gotchas
+Gotchas
 ```notes
 
 ```
 ---
-### Service Boundaries
+Ineffective Service Boundaries
+[More Info](https://docs.microsoft.com/en-us/azure/architecture/microservices/microservice-boundaries)
 ```notes
-
+Identify verticals -- a self-contained context that represents a particular subdomain of the larger application.
 ```
 ---
-### Automation
+No Automation
+[More Info](https://docs.microsoft.com/en-us/azure/architecture/microservices/ci-cd)
 ```notes
-
+Automate build, test, and deployment
+* Faster release cycles
+* Fewer bugs reach production
 ```
 ---
-### Logging
+No Logging and Monitoring
+[More Info](https://docs.microsoft.com/en-us/azure/architecture/microservices/logging-monitoring)
 ```notes
-
+Dozens or even hundreds of services.
+Logging for tracing.
+Monitoring for holistic view of health.
 ```
 ---
-### Monitoring
+Ineffective Org and Team Structure
+>Conway's Law: Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.
 ```notes
-
 ```
 ---
-### Team Structure
+Ineffective Org and Team Structure
+![Bad Team](images/bad-team.png)
 ```notes
-
+Major cause of constraint.
+Poor communication.
+Many hands involved.
 ```
 ---
-### Org Structure
+Ineffective Org and Team Structure
+![Good Team](images/good-team.png)
 ```notes
-
+1 team per vertical.
+Build-and-run teams.
+Dev, ops, test, product management.
+100% ownership.
 ```
 ---
-### DevOps Culture
+Lacking DevOps Culture
+[More Info](https://docs.microsoft.com/en-us/azure/devops/learn/what-is-devops-culture)
 ```notes
+You build it -- you run it.
 Note "culture".
 Not a DevOps guy.
 Not a DevOps department.
 A culture shift with shared buy-in.
 ```
+
 ***
 ***
+
 ## Tools
 ```notes
 
@@ -295,3 +315,5 @@ MSFT Docs
 
 ```
 ***
+
+

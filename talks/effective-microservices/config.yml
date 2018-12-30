@@ -1,2 +1,6 @@
 author:     "Justin VanWinkle"
 title:      "Microservices: Implementations Details"
+revealjs_config:
+  autoPlayMedia: true
+  transition: 'convex'
+  display: 'block'

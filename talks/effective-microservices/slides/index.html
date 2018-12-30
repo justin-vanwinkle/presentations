@@ -46,7 +46,9 @@
   <div class="slides">
     <section>
 
-<h1>Effective Microservices</h1>
+<p style="font-size:80px;">
+Effective<br>Microservices
+</p>
 <p><a href="https://www.jvanwinkle.com">Justin VanWinkle</a><br>
 <a href="https://twitter.com/FundamentalDev">@FundamentalDev</a></p>
 
@@ -60,7 +62,8 @@
 <section>
 <section>
 
-<h2>Defining “Effective”</h2>
+<p>Defining “Effective”</p>
+<video src="https://media.giphy.com/media/1qG8Tr4G3htja/giphy.mp4"></video>
 
 <aside class="notes">
 
@@ -69,7 +72,9 @@
 </section>
 <section>
 
-<h3>Solve Business Problem</h3>
+<p>Solve Business Problem</p>
+<video src="https://media.giphy.com/media/UKkes2qN2T70s/giphy.mp4"></video>
+<p><a href="https://docs.microsoft.com/en-us/azure/architecture/microservices/domain-analysis">More Info</a></p>
 
 <aside class="notes">
 
@@ -84,8 +89,8 @@
 </section>
 <section>
 
-<h3>Minimal Outages</h3>
-<p><img src="images/outage.jpg" alt="Outage"></p>
+<p>Minimize Outages</p>
+<video loop="" src="https://media.giphy.com/media/u89uPwAyJSyYg/giphy.mp4"></video>
 
 <aside class="notes">
 
@@ -96,7 +101,8 @@
 </section>
 <section>
 
-<h3>Fast Response Times</h3>
+<p>Fast Response Times</p>
+<video src="https://media.giphy.com/media/l4FGwBxQ8VjtzNcv6/giphy.mp4"></video>
 
 <aside class="notes">
 
@@ -109,7 +115,8 @@
 </section>
 <section>
 
-<h3>Cost Effective</h3>
+<p>Cost Effective</p>
+<video src="https://media.giphy.com/media/3ohjV1wV5q38uFVjG0/giphy.mp4"></video>
 
 <aside class="notes">
 
@@ -122,37 +129,26 @@
 </section>
 <section>
 
-<h3>Easy Deployments</h3>
-<p><img src="images/devops-loop.png" alt="DevOps Loop"></p>
+<p>Deploy Easily and Regularly<br>
+<img src="images/devops-loop.png" alt="DevOps Loop"></p>
 
 <aside class="notes">
 
 <p>A fully automated DevOps pipeline is necessary.</p>
+
+<p>If you can’t deploy regularly, you have a constraint.</p>
 
 <p>Otherwise, efficiency is lost in manual tasks.</p>
 
 </aside>
 
 </section>
-<section>
-
-<h3>Ability to Deploy Regularly</h3>
-
-<aside class="notes">
-
-<p>If you can’t deploy regularly, you have a constraint.</p>
-
-<p>DevOps is the answer here once again.</p>
-
-</aside>
-
-</section>
 </section>
 
 <section>
 <section>
 
-<h2>Defining “Microservice”</h2>
+<p>Defining “Microservice”</p>
 
 <aside class="notes">
 
@@ -163,8 +159,8 @@
 </section>
 <section>
 
-<h3>Monolith</h3>
-<p><img src="images/monolith-house.jpg" alt="Monolith House"></p>
+<p>Monolith<br>
+<img src="images/monolith-house.jpg" alt="Monolith House"></p>
 
 <aside class="notes">
 
@@ -181,8 +177,8 @@
 </section>
 <section>
 
-<h3>Nanoservice</h3>
-<p><img src="images/nanoservice-house.jpg" alt="Nanoservice House"></p>
+<p>Nanoservice<br>
+<img src="images/nanoservice-house.jpg" alt="Nanoservice House"></p>
 
 <aside class="notes">
 
@@ -204,8 +200,8 @@
 </section>
 <section>
 
-<h3>Microservice</h3>
-<p><img src="images/microservice-house.jpg" alt="Microservice House"></p>
+<p>Microservice<br>
+<img src="images/microservice-house.jpg" alt="Microservice House"></p>
 
 <aside class="notes">
 
@@ -227,7 +223,7 @@
 <section>
 <section>
 
-<h2>Gotchas</h2>
+<p>Gotchas</p>
 
 <aside class="notes">
 
@@ -236,7 +232,52 @@
 </section>
 <section>
 
-<h3>Service Boundaries</h3>
+<p>Ineffective Service Boundaries<br>
+<a href="https://docs.microsoft.com/en-us/azure/architecture/microservices/microservice-boundaries">More Info</a></p>
+
+<aside class="notes">
+
+<p>Identify verticals – a self-contained context that represents a particular subdomain of the larger application.</p>
+
+</aside>
+
+</section>
+<section>
+
+<p>No Automation<br>
+<a href="https://docs.microsoft.com/en-us/azure/architecture/microservices/ci-cd">More Info</a></p>
+
+<aside class="notes">
+
+<p>Automate build, test, and deployment</p>
+<ul>
+  <li>Faster release cycles</li>
+  <li>Fewer bugs reach production</li>
+</ul>
+
+</aside>
+
+</section>
+<section>
+
+<p>No Logging and Monitoring<br>
+<a href="https://docs.microsoft.com/en-us/azure/architecture/microservices/logging-monitoring">More Info</a></p>
+
+<aside class="notes">
+
+<p>Dozens or even hundreds of services.<br>
+Logging for tracing.<br>
+Monitoring for holistic view of health.</p>
+
+</aside>
+
+</section>
+<section>
+
+<p>Ineffective Org and Team Structure</p>
+<blockquote>
+  <p>Conway’s Law: Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.</p>
+</blockquote>
 
 <aside class="notes">
 
@@ -245,56 +286,42 @@
 </section>
 <section>
 
-<h3>Automation</h3>
+<p>Ineffective Org and Team Structure<br>
+<img src="images/bad-team.png" alt="Bad Team"></p>
 
 <aside class="notes">
+
+<p>Major cause of constraint.<br>
+Poor communication.<br>
+Many hands involved.</p>
 
 </aside>
 
 </section>
 <section>
 
-<h3>Logging</h3>
+<p>Ineffective Org and Team Structure<br>
+<img src="images/good-team.png" alt="Good Team"></p>
 
 <aside class="notes">
+
+<p>1 team per vertical.<br>
+Build-and-run teams.<br>
+Dev, ops, test, product management.<br>
+100% ownership.</p>
 
 </aside>
 
 </section>
 <section>
 
-<h3>Monitoring</h3>
+<p>Lacking DevOps Culture<br>
+<a href="https://docs.microsoft.com/en-us/azure/devops/learn/what-is-devops-culture">More Info</a></p>
 
 <aside class="notes">
 
-</aside>
-
-</section>
-<section>
-
-<h3>Team Structure</h3>
-
-<aside class="notes">
-
-</aside>
-
-</section>
-<section>
-
-<h3>Org Structure</h3>
-
-<aside class="notes">
-
-</aside>
-
-</section>
-<section>
-
-<h3>DevOps Culture</h3>
-
-<aside class="notes">
-
-<p>Note “culture”.<br>
+<p>You build it – you run it.<br>
+Note “culture”.<br>
 Not a DevOps guy.<br>
 Not a DevOps department.<br>
 A culture shift with shared buy-in.</p>
@@ -598,7 +625,7 @@ MSFT Docs</p>
 
   
 
-  var configOptions = {"controls":true,"progress":true,"history":true,"center":true}
+  var configOptions = {"autoPlayMedia":true,"transition":"convex","display":"block"}
   var initializeOptions = {};
   extend(initializeOptions, baseOptions);
   extend(initializeOptions, configOptions);
