@@ -117,12 +117,14 @@ Gotchas
 ---
 Ineffective Service Boundaries
 [More Info](https://docs.microsoft.com/en-us/azure/architecture/microservices/microservice-boundaries)
+<video src="https://media.giphy.com/media/26tn42f4M1jbuAMM0/giphy.mp4"></video>
 ```notes
 Identify verticals -- a self-contained context that represents a particular subdomain of the larger application.
 ```
 ---
 No Automation
 [More Info](https://docs.microsoft.com/en-us/azure/architecture/microservices/ci-cd)
+<video src="https://media.giphy.com/media/CmFMWpEa4IFtS/giphy.mp4"></video>
 ```notes
 Automate build, test, and deployment
 * Faster release cycles
@@ -131,6 +133,7 @@ Automate build, test, and deployment
 ---
 No Logging and Monitoring
 [More Info](https://docs.microsoft.com/en-us/azure/architecture/microservices/logging-monitoring)
+<video src="https://media.giphy.com/media/xT5LMLVc5gC31eHYc0/giphy.mp4"></video>
 ```notes
 Dozens or even hundreds of services.
 Logging for tracing.
@@ -138,7 +141,12 @@ Monitoring for holistic view of health.
 ```
 ---
 Ineffective Org and Team Structure
->Conway's Law: Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.
+![Conway's Law](images/conways-law.jpg)
+```notes
+```
+---
+Ineffective Org and Team Structure
+![Jimmy's Law](images/jimmys-law.jpg)
 ```notes
 ```
 ---
@@ -172,34 +180,29 @@ You build it -- you run it.
 ***
 ***
 
-## Tools
+Tools
 ```notes
-
 ```
 ---
-### DevOps
+Automation
 ```notes
 Complete CI/CD
 * Azure DevOps
 * GitHub Pipelines
 * Jenkins
+* Ansible
+* Selenium
+* XState
 ```
 ---
-### Configuration as Code
+![Infrastructure and Configuration as Code](images/infra-config-as-code.jpg)
 ```notes
 Version control
 Change tracking
-Audit logging
+Audit trails
 ```
 ---
-### Infrastructure as Code
-```notes
-Version control
-Change tracking
-Audit logging
-```
----
-### The Cloud
+The Cloud
 ```notes
 Lots to take advantage of:
 * Autoscaling
@@ -207,13 +210,13 @@ Lots to take advantage of:
 * Simplicity of setup and configuration
 ```
 ---
-### Docker
+![Docker](images/docker.png)
 ```notes
 All-in-one packaging
 Reproducability
 ```
 ---
-### Kubernetes
+![Kubernetes](images/kubernetes.png)
 ```notes
 Scaling
 Redundancy
@@ -235,6 +238,7 @@ Lots of literature.
 ```
 ---
 2 - Write Minimum Viable Service
+![MVP](images/mvp.jpg)
 ```notes
 Gotta start somewhere.
 Aside from poor boundaries, it's mostly easy to refactor for lessons learned.
@@ -271,7 +275,8 @@ Key Takeaways
 
 ```
 ---
-### Automate Everything
+Automate Everything
+<video src="https://media.giphy.com/media/1nR6fu93A17vWZbO9c/giphy.mp4"></video>
 ```notes
 Build
 Test
@@ -281,6 +286,7 @@ Configuration
 ```
 ---
 ### Codify Everything
+<video src="https://media.giphy.com/media/zXmbOaTpbY6mA/giphy.mp4"></video>
 ```notes
 Service
 Infrastructure
@@ -289,7 +295,8 @@ Build
 Deploy
 ```
 ---
-### Test Everything
+Test Everything
+<video src="https://media.giphy.com/media/5xrkJe3IJKSze/giphy.mp4"></video>
 ```notes
 Load Test early and often
 Acceptance test
@@ -298,23 +305,36 @@ Integration Test
 Shift testing left in schedule
 ```
 ---
-### Monitor Everything
+Monitor Everything
+<video src="https://media.giphy.com/media/ZKw0NDn10ljSE/giphy.mp4"></video>
 ```notes
 
 ```
 
 ***
 ***
-## Next Steps
+Next Steps
 ```notes
 
 ```
 ---
-### Literature
+Literature
 ```notes
 DDD
 DDD Quickly
 MSFT Docs
+```
+---
+![DDD](images/ddd.jpg)
+```notes
+```
+---
+![DDD Quickly](images/dddq.jpg)
+```notes
+```
+---
+![MSFT Docs](images/msft-docs.png)
+```notes
 ```
 ---
 ### Reach Out
