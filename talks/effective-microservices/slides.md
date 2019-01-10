@@ -276,7 +276,7 @@ Key Takeaways
 ```
 ---
 Automate Everything
-<video src="https://media.giphy.com/media/1nR6fu93A17vWZbO9c/giphy.mp4"></video>
+<video loop src="https://media.giphy.com/media/1nR6fu93A17vWZbO9c/giphy.mp4"></video>
 ```notes
 Build
 Test
@@ -285,8 +285,8 @@ Infrastructure
 Configuration
 ```
 ---
-### Codify Everything
-<video src="https://media.giphy.com/media/zXmbOaTpbY6mA/giphy.mp4"></video>
+Codify Everything
+<video loop src="https://media.giphy.com/media/zXmbOaTpbY6mA/giphy.mp4"></video>
 ```notes
 Service
 Infrastructure
@@ -313,16 +313,10 @@ Monitor Everything
 
 ***
 ***
+
 Next Steps
 ```notes
 
-```
----
-Literature
-```notes
-DDD
-DDD Quickly
-MSFT Docs
 ```
 ---
 ![DDD](images/ddd.jpg)
@@ -337,15 +331,18 @@ MSFT Docs
 ```notes
 ```
 ---
-### Reach Out
-```notes
+This Slide Deck
 
-```
 ---
-### Follow Me
+Follow / Reach Out
+Twitter: @FundamentalDev
+Website: jvanwinkle.com
 ```notes
-
+Want more information?
+Need validation?
+Want to check your plan?
 ```
+
 ***
 
 
